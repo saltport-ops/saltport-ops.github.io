@@ -51,7 +51,6 @@
         radial-gradient(circle at 82% 78%, rgba(107, 142, 127, 0.04) 0%, transparent 55%);
     }
 
-    /* Subtle paper grain */
     body::before {
       content: '';
       position: fixed;
@@ -75,7 +74,6 @@
       flex-direction: column;
     }
 
-    /* Top nav */
     .topnav {
       display: flex;
       justify-content: space-between;
@@ -104,7 +102,6 @@
       font-weight: 500;
     }
 
-    /* Main composition */
     .main {
       flex: 1;
       display: flex;
@@ -193,7 +190,6 @@
       color: var(--ink);
     }
 
-    /* Footer */
     .footer {
       border-top: 1px solid var(--rule);
       padding-top: 24px;
@@ -207,6 +203,8 @@
       color: var(--stone);
       font-weight: 500;
       animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.85s both;
+      flex-wrap: wrap;
+      gap: 16px;
     }
 
     .footer .left,
@@ -214,6 +212,17 @@
       display: flex;
       gap: 28px;
       align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .footer a {
+      color: var(--stone);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: var(--copper);
     }
 
     .footer em {
@@ -226,7 +235,6 @@
       font-variation-settings: "SOFT" 70;
     }
 
-    /* Animations */
     @keyframes fadeUp {
       from {
         opacity: 0;
@@ -238,7 +246,6 @@
       }
     }
 
-    /* Mobile */
     @media (max-width: 720px) {
       .topnav {
         flex-direction: column;
@@ -267,7 +274,6 @@
       }
     }
 
-    /* Selection */
     ::selection {
       background: var(--ink);
       color: var(--bg);
@@ -278,13 +284,11 @@
 
   <div class="container">
 
-    <!-- TOP NAV -->
     <nav class="topnav">
       <div class="mark"><em>S</em>altPort Group LLC</div>
       <div class="meta">Est. Maine · MMXXVI</div>
     </nav>
 
-    <!-- MAIN COMPOSITION -->
     <main class="main">
 
       <div class="eyebrow">A Holding Company</div>
@@ -296,18 +300,19 @@
       </p>
 
       <p class="description">
-        A real estate investment and hospitality company building toward <em>the future of hospitality</em> through efficient operations and quality guest experiences.
+        A real estate investment and hospitality company building toward <em>the future of hospitality</em> through efficient operations and considered guest experience.
       </p>
 
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
       <div class="left">
         <span>© MMXXVI SaltPort Group LLC</span>
         <span><em>Privately held.</em></span>
       </div>
       <div class="right">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
         <span>Maine, USA</span>
       </div>
     </footer>

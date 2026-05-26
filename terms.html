@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms &amp; Conditions — SaltPort Group LLC</title>
+  <meta name="description" content="Terms and conditions for SaltPort Group LLC, a Maine-based real estate and hospitality company.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Manrope:wght@300..700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F4EFE5;
+      --ink: #1A2832;
+      --ink-soft: #2C3A47;
+      --stone: #6B7480;
+      --copper: #8B5E3C;
+      --rule: rgba(26, 40, 50, 0.12);
+      --serif: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Manrope', system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.7;
+      letter-spacing: -0.003em;
+      background-image:
+        radial-gradient(circle at 18% 22%, rgba(139, 94, 60, 0.04) 0%, transparent 55%),
+        radial-gradient(circle at 82% 78%, rgba(107, 142, 127, 0.04) 0%, transparent 55%);
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.35;
+      mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.13 0 0 0 0 0.18 0 0 0 0.5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+      z-index: 1;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px clamp(28px, 5vw, 60px) 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 56px;
+    }
+
+    .topnav .mark {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .topnav .mark em {
+      font-style: italic;
+      font-variation-settings: "SOFT" 60, "WONK" 1;
+    }
+
+    .topnav .back {
+      font-family: var(--sans);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--stone);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .topnav .back:hover {
+      color: var(--copper);
+    }
+
+    .doc-header {
+      margin-bottom: 64px;
+    }
+
+    .doc-eyebrow {
+      font-family: var(--sans);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.32em;
+      color: var(--copper);
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+
+    .doc-eyebrow::before {
+      content: "—  ";
+      color: var(--copper);
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(44px, 7vw, 72px);
+      font-weight: 350;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 32px;
+      font-variation-settings: "opsz" 144, "SOFT" 30;
+    }
+
+    h1 em {
+      font-style: italic;
+      font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
+    }
+
+    .effective {
+      font-family: var(--sans);
+      font-size: 13px;
+      color: var(--stone);
+      letter-spacing: 0.04em;
+    }
+
+    .effective strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .toc {
+      background: rgba(139, 94, 60, 0.04);
+      border-left: 2px solid var(--copper);
+      padding: 28px 32px;
+      margin-bottom: 56px;
+    }
+
+    .toc-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--copper);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .toc ol {
+      list-style: none;
+      counter-reset: toc-counter;
+      columns: 2;
+      column-gap: 32px;
+    }
+
+    .toc li {
+      counter-increment: toc-counter;
+      padding: 4px 0;
+      font-size: 14px;
+      break-inside: avoid;
+    }
+
+    .toc li::before {
+      content: counter(toc-counter, upper-roman) ".";
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--copper);
+      margin-right: 10px;
+      font-variation-settings: "SOFT" 60;
+    }
+
+    .toc a {
+      color: var(--ink-soft);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .toc a:hover {
+      color: var(--copper);
+    }
+
+    section {
+      margin-bottom: 56px;
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 24px;
+      font-variation-settings: "opsz" 144, "SOFT" 40;
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+    }
+
+    h2 .num {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 16px;
+      color: var(--copper);
+      font-weight: 350;
+      font-variation-settings: "SOFT" 80, "WONK" 1;
+      flex-shrink: 0;
+    }
+
+    h3 {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--ink);
+      margin: 24px 0 12px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--ink-soft);
+    }
+
+    p strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 0 0 16px 0;
+      padding-left: 24px;
+      color: var(--ink-soft);
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      padding-left: 4px;
+    }
+
+    ul li::marker {
+      color: var(--copper);
+    }
+
+    a {
+      color: var(--copper);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--ink);
+    }
+
+    .callout {
+      background: rgba(139, 94, 60, 0.05);
+      border-left: 2px solid var(--copper);
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 16px;
+      line-height: 1.55;
+      color: var(--ink);
+      font-variation-settings: "SOFT" 50;
+    }
+
+    .callout strong {
+      font-style: normal;
+      font-family: var(--sans);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--copper);
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .contact-block {
+      background: rgba(26, 40, 50, 0.03);
+      padding: 28px 32px;
+      margin: 24px 0;
+      border: 1px solid var(--rule);
+    }
+
+    .contact-block .org {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+
+    .contact-block .org em {
+      font-style: italic;
+      font-variation-settings: "SOFT" 60, "WONK" 1;
+    }
+
+    .contact-block address {
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--ink-soft);
+    }
+
+    .footer {
+      border-top: 1px solid var(--rule);
+      padding: 32px 0 0;
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-family: var(--sans);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--stone);
+      font-weight: 500;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer .left,
+    .footer .right {
+      display: flex;
+      gap: 28px;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .footer a {
+      color: var(--stone);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: var(--copper);
+    }
+
+    .footer em {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 13px;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--ink-soft);
+      font-variation-settings: "SOFT" 60;
+    }
+
+    @media (max-width: 720px) {
+      .toc ol {
+        columns: 1;
+      }
+
+      .topnav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      .footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+    }
+
+    ::selection {
+      background: var(--ink);
+      color: var(--bg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <nav class="topnav">
+      <a href="/" class="mark"><em>S</em>altPort Group LLC</a>
+      <a href="/" class="back">← Back to Home</a>
+    </nav>
+
+    <header class="doc-header">
+      <div class="doc-eyebrow">Legal</div>
+      <h1>Terms <em>&amp; Conditions</em></h1>
+      <p class="effective"><strong>Effective Date:</strong> May 25, 2026 &nbsp;·&nbsp; <strong>Last Updated:</strong> May 25, 2026</p>
+    </header>
+
+    <div class="toc">
+      <div class="toc-label">Contents</div>
+      <ol>
+        <li><a href="#acceptance">Acceptance of Terms</a></li>
+        <li><a href="#services">Description of Services</a></li>
+        <li><a href="#bookings">Bookings and Reservations</a></li>
+        <li><a href="#payment">Payment and Pricing</a></li>
+        <li><a href="#cancellations">Cancellations and Refunds</a></li>
+        <li><a href="#houserules">House Rules and Guest Conduct</a></li>
+        <li><a href="#responsibilities">Guest Responsibilities</a></li>
+        <li><a href="#property">Property Condition and Access</a></li>
+        <li><a href="#sms">SMS Communications</a></li>
+        <li><a href="#liability">Limitation of Liability</a></li>
+        <li><a href="#indemnification">Indemnification</a></li>
+        <li><a href="#ip">Intellectual Property</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#governing">Governing Law and Disputes</a></li>
+        <li><a href="#changes">Changes to These Terms</a></li>
+        <li><a href="#general">General Provisions</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </div>
+
+    <!-- 1 -->
+    <section id="acceptance">
+      <h2><span class="num">i.</span>Acceptance of Terms</h2>
+      <p>These Terms and Conditions ("Terms") govern your use of services provided by SaltPort Group LLC ("SaltPort," "we," "us," or "our"), a Maine limited liability company. By making a reservation, staying at one of our properties, providing services to us as a vendor or contractor, or using our website, you agree to be bound by these Terms.</p>
+      <p>If you do not agree to these Terms, please do not make a reservation, use our services, or interact with our website.</p>
+    </section>
+
+    <!-- 2 -->
+    <section id="services">
+      <h2><span class="num">ii.</span>Description of Services</h2>
+      <p>SaltPort operates short-term and long-term rental properties in coastal and urban Maine. Our properties currently include:</p>
+      <ul>
+        <li><strong>Laughton House &amp; Cottages</strong> — a year-round main house and four seasonal cottages in New Harbor, Maine</li>
+        <li><strong>Grant Street</strong> — a three-unit residential building in Portland, Maine, offering both short-term and long-term rentals</li>
+      </ul>
+      <p>Services include providing accommodations, related guest support, and operational coordination with vendors and contractors. We may add, modify, or discontinue properties or services at our discretion.</p>
+    </section>
+
+    <!-- 3 -->
+    <section id="bookings">
+      <h2><span class="num">iii.</span>Bookings and Reservations</h2>
+
+      <h3>Bookings Through Third-Party Platforms</h3>
+      <p>Reservations made through third-party booking platforms (including Airbnb, Vrbo, and Booking.com) are governed by the terms, policies, payment processes, and cancellation rules of those platforms. SaltPort honors the terms applicable to your booking on the platform where the reservation was made.</p>
+
+      <h3>Direct Bookings</h3>
+      <p>For reservations made directly with SaltPort, the following applies:</p>
+      <ul>
+        <li>A reservation is confirmed only upon receipt of payment in accordance with the booking terms communicated to you at the time of booking</li>
+        <li>Confirmed reservations grant a limited, non-transferable license to occupy the property for the booked dates and stated purpose only</li>
+        <li>Reservations may not be assigned, sublet, or transferred without our written consent</li>
+      </ul>
+
+      <h3>Accuracy of Information</h3>
+      <p>You agree to provide accurate, current, and complete information when making a reservation, including names of all guests, dates, party size, and contact information.</p>
+
+      <h3>Age Requirement</h3>
+      <p>The primary guest making the reservation must be at least eighteen (18) years of age and legally capable of entering into binding contracts.</p>
+    </section>
+
+    <!-- 4 -->
+    <section id="payment">
+      <h2><span class="num">iv.</span>Payment and Pricing</h2>
+      <p>Pricing is as displayed at the time of booking on the applicable platform or as agreed in a direct booking. Rates may vary based on dates, season, length of stay, and other factors. Additional fees may apply, including cleaning fees, service fees, lodging taxes, occupancy taxes, and applicable state and local taxes.</p>
+      <p>Payment is processed via third-party payment platforms or processors. SaltPort does not store full payment card numbers. You are responsible for any fees charged by your bank or payment provider.</p>
+    </section>
+
+    <!-- 5 -->
+    <section id="cancellations">
+      <h2><span class="num">v.</span>Cancellations and Refunds</h2>
+      <p><strong>For reservations made through third-party platforms,</strong> the cancellation and refund policies of the platform on which the reservation was made apply, and SaltPort honors those policies.</p>
+      <p><strong>For direct reservations,</strong> the specific cancellation policy applicable to your booking will be provided to you at the time of booking and confirmed in writing. In the absence of a specific written policy, cancellations made more than thirty (30) days before the check-in date may be eligible for a partial refund at our discretion; cancellations made within thirty (30) days of check-in are non-refundable.</p>
+      <p>In the event of property damage, force majeure, or circumstances beyond our control (including natural disaster, utility outage, or government order) that render a property unsuitable for the booked stay, we may at our discretion offer rebooking, partial refund, or full refund.</p>
+    </section>
+
+    <!-- 6 -->
+    <section id="houserules">
+      <h2><span class="num">vi.</span>House Rules and Guest Conduct</h2>
+      <p>Guests agree to abide by all house rules provided at the time of booking and posted within the property, including but not limited to:</p>
+      <ul>
+        <li>Maximum occupancy as stated in the listing — additional guests, parties, or events not permitted without prior written consent</li>
+        <li>No smoking, vaping, or use of open flames inside any property</li>
+        <li>No pets unless expressly authorized in writing</li>
+        <li>Quiet hours from 10:00 PM to 8:00 AM; respect for neighbors and the surrounding community</li>
+        <li>No illegal activity of any kind</li>
+        <li>Compliance with all applicable federal, state, and local laws and ordinances</li>
+        <li>Respect for the property, furnishings, fixtures, and any provided amenities</li>
+      </ul>
+      <p>Violation of house rules may result in immediate termination of your reservation without refund, forfeiture of security deposits where applicable, and additional charges for damages, cleaning, or losses.</p>
+    </section>
+
+    <!-- 7 -->
+    <section id="responsibilities">
+      <h2><span class="num">vii.</span>Guest Responsibilities</h2>
+      <p>By staying at a SaltPort property, you agree to:</p>
+      <ul>
+        <li>Use the property only for personal lodging and the booked purpose</li>
+        <li>Promptly notify us of any damage, malfunction, or safety issue</li>
+        <li>Secure the property when leaving (locking doors and windows)</li>
+        <li>Dispose of waste responsibly and follow any recycling guidelines</li>
+        <li>Not exceed maximum occupancy or invite unauthorized visitors</li>
+        <li>Reimburse SaltPort for any damage caused by you, your party, or your guests beyond normal wear and tear</li>
+        <li>Vacate the property by the stated check-out time</li>
+      </ul>
+    </section>
+
+    <!-- 8 -->
+    <section id="property">
+      <h2><span class="num">viii.</span>Property Condition and Access</h2>
+      <p>Properties are provided on an "as-is" basis. While we make commercially reasonable efforts to maintain our properties in good condition, individual property features, amenities, and conditions may vary. Photos and listings represent our best efforts to depict each property accurately at the time of publication.</p>
+      <p>SaltPort, our agents, and our authorized vendors and contractors reserve the right to enter the property as needed for inspection, maintenance, emergency response, or compliance with legal obligations. We will provide reasonable notice when feasible.</p>
+      <p>Properties may include security cameras at exterior entrances and common exterior areas. No cameras are installed inside any property or in private interior spaces.</p>
+    </section>
+
+    <!-- 9 SMS -->
+    <section id="sms">
+      <h2><span class="num">ix.</span>SMS Communications</h2>
+      <p>By providing your mobile telephone number in connection with a reservation or service relationship, you consent to receive operational SMS messages from SaltPort.</p>
+      <p>Operational messages may include reservation confirmations, check-in instructions, scheduling coordination, maintenance updates, and responses to inquiries. Message frequency varies based on operational needs. Standard message and data rates from your mobile carrier may apply.</p>
+      <p>You may opt out of SMS communications at any time by replying <strong>STOP</strong> to any message. For help, reply <strong>HELP</strong>. For more information about how we handle SMS information, see our <a href="/privacy.html">Privacy Policy</a>.</p>
+
+      <div class="callout">
+        <strong>Mobile Information</strong>
+        SaltPort does not share or sell mobile telephone numbers or SMS opt-in information with any third party or affiliate for marketing or promotional purposes.
+      </div>
+    </section>
+
+    <!-- 10 -->
+    <section id="liability">
+      <h2><span class="num">x.</span>Limitation of Liability</h2>
+      <p>To the maximum extent permitted by applicable law:</p>
+      <ul>
+        <li>SaltPort, its members, officers, employees, agents, vendors, and contractors shall not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages arising out of or related to your use of our services or stay at any SaltPort property</li>
+        <li>Our total aggregate liability for any claim arising out of or related to a reservation shall not exceed the total amount actually paid by you for that reservation</li>
+        <li>SaltPort is not liable for personal injury, property damage, loss, theft, or other harm except to the extent caused by our gross negligence or willful misconduct</li>
+        <li>SaltPort is not responsible for circumstances beyond our reasonable control, including natural disasters, severe weather, utility outages, government actions, or third-party platform issues</li>
+      </ul>
+      <p>Some jurisdictions do not allow the exclusion or limitation of certain damages. In such jurisdictions, our liability is limited to the maximum extent permitted by law.</p>
+    </section>
+
+    <!-- 11 -->
+    <section id="indemnification">
+      <h2><span class="num">xi.</span>Indemnification</h2>
+      <p>You agree to indemnify, defend, and hold harmless SaltPort Group LLC, its members, officers, employees, agents, vendors, and contractors from and against any claims, liabilities, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or related to:</p>
+      <ul>
+        <li>Your breach of these Terms or any policies referenced herein</li>
+        <li>Your use or misuse of the property or our services</li>
+        <li>Your violation of any law or regulation</li>
+        <li>Damage caused by you, members of your party, or your invited guests</li>
+        <li>Your violation of any third-party rights</li>
+      </ul>
+    </section>
+
+    <!-- 12 -->
+    <section id="ip">
+      <h2><span class="num">xii.</span>Intellectual Property</h2>
+      <p>All content on the SaltPort website and in our marketing materials — including text, photographs, graphics, logos, the "SaltPort" name and wordmark, and the visual identity of our properties — is owned by or licensed to SaltPort Group LLC and is protected by United States and international intellectual property laws.</p>
+      <p>You may not copy, reproduce, distribute, modify, or create derivative works from any of our content without our prior written consent, except for personal, non-commercial use.</p>
+    </section>
+
+    <!-- 13 -->
+    <section id="privacy">
+      <h2><span class="num">xiii.</span>Privacy</h2>
+      <p>Your use of our services is also governed by our <a href="/privacy.html">Privacy Policy</a>, which is incorporated by reference into these Terms. Please review our Privacy Policy to understand how we collect, use, and share personal information.</p>
+    </section>
+
+    <!-- 14 -->
+    <section id="governing">
+      <h2><span class="num">xiv.</span>Governing Law and Disputes</h2>
+
+      <h3>Governing Law</h3>
+      <p>These Terms and any disputes arising from or related to them or to your use of our services shall be governed by and construed in accordance with the laws of the State of Maine, without regard to its conflict-of-laws principles.</p>
+
+      <h3>Venue</h3>
+      <p>Any legal action or proceeding arising under or related to these Terms shall be brought exclusively in the state or federal courts located in Cumberland County, Maine, and you consent to the personal jurisdiction of those courts.</p>
+
+      <h3>Informal Dispute Resolution</h3>
+      <p>Before initiating any formal legal action, you agree to first contact us in writing to attempt to resolve the matter informally. We will make good-faith efforts to resolve disputes within thirty (30) days of receiving written notice.</p>
+
+      <h3>Class Action Waiver</h3>
+      <p>To the maximum extent permitted by law, you and SaltPort each agree that any dispute will be resolved on an individual basis and not as part of a class, consolidated, or representative action.</p>
+    </section>
+
+    <!-- 15 -->
+    <section id="changes">
+      <h2><span class="num">xv.</span>Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. When we make material changes, we will update the "Effective Date" and "Last Updated" date at the top of this page. The Terms in effect at the time of your reservation govern that reservation. Continued use of our services after changes constitutes acceptance of the updated Terms.</p>
+    </section>
+
+    <!-- 16 -->
+    <section id="general">
+      <h2><span class="num">xvi.</span>General Provisions</h2>
+
+      <h3>Entire Agreement</h3>
+      <p>These Terms, together with our Privacy Policy and any booking-specific terms communicated to you at the time of booking, constitute the entire agreement between you and SaltPort regarding your use of our services.</p>
+
+      <h3>Severability</h3>
+      <p>If any provision of these Terms is found to be unenforceable, the remaining provisions shall remain in full force and effect.</p>
+
+      <h3>Waiver</h3>
+      <p>Our failure to enforce any right or provision of these Terms shall not be deemed a waiver of that right or provision.</p>
+
+      <h3>Assignment</h3>
+      <p>You may not assign or transfer these Terms or any rights or obligations hereunder without our prior written consent. SaltPort may assign these Terms freely.</p>
+
+      <h3>No Third-Party Beneficiaries</h3>
+      <p>These Terms do not confer any rights on any person or entity other than the parties.</p>
+    </section>
+
+    <!-- 17 -->
+    <section id="contact">
+      <h2><span class="num">xvii.</span>Contact Us</h2>
+      <p>For questions about these Terms or any related matter, please contact:</p>
+
+      <div class="contact-block">
+        <div class="org"><em>S</em>altPort Group LLC</div>
+        <address>
+          [Mailing Address — Maine]<br>
+          <a href="mailto:principal@saltportgroup.com">principal@saltportgroup.com</a>
+        </address>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="left">
+        <span>© MMXXVI SaltPort Group LLC</span>
+        <span><em>Privately held.</em></span>
+      </div>
+      <div class="right">
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy</a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
